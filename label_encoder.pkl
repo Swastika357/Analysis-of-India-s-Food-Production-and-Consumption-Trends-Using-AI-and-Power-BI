@@ -1,0 +1,18 @@
+€•      Œsklearn.preprocessing._label”ŒLabelEncoder”“”)”}”(Œclasses_”Œjoblib.numpy_pickle”ŒNumpyArrayWrapper”“”)”}”(Œsubclass”Œnumpy”Œ ndarray”“”Œshape”K]…”Œorder”ŒC”Œdtype”hŒdtype”“”ŒO8”‰ˆ‡”R”(KŒ|”NNNJÿÿÿÿJÿÿÿÿK?t”bŒ
+allow_mmap”‰Œnumpy_array_alignment_bytes”Kub€•î      Œnumpy._core.multiarray”Œ_reconstruct”“”Œnumpy”Œ ndarray”“”K …”Cb”‡”R”(KK]…”hŒdtype”“”ŒO8”‰ˆ‡”R”(KŒ|”NNNJÿÿÿÿJÿÿÿÿK?t”b‰]”(ŒAlcohol, Non-Food”ŒApples and products”ŒAquatic Animals, Others”ŒAquatic Plants”Œ Bananas”ŒBarley and products”ŒBeans”ŒBeer”ŒBeverages, Alcoholic”ŒBeverages, Fermented”Œ
+Bovine Meat”ŒButter, Ghee”ŒCassava and products”Œ
+Cephalopods”ŒCereals, other”Œ
+Citrus, Other”ŒCloves”ŒCocoa Beans and products”Œ
+Coconut Oil”ŒCoconuts - Incl Copra”ŒCoffee and products”Œ
+Cottonseed”ŒCottonseed Oil”ŒCream”Œ
+Crustaceans”ŒDates”Œ
+Demersal Fish”ŒEggs”ŒFats, Animals, Raw”ŒFish, Body Oil”ŒFish, Liver Oil”ŒFreshwater Fish”Œ
+Fruits, other”ŒGrapefruit and products”ŒGrapes and products (excl wine)”Œ
+Groundnut Oil”Œ
+Groundnuts”ŒHoney”Œ
+Infant food”ŒLemons, Limes and products”ŒMaize Germ Oil”ŒMaize and products”ŒMarine Fish, Other”Œ
+Meat, Other”ŒMilk - Excluding Butter”ŒMillet and products”Œ
+Miscellaneous”ŒMolluscs, Other”ŒMutton & Goat Meat”ŒNuts and products”ŒOats”ŒOffals, Edible”ŒOilcrops Oil, Other”ŒOilcrops, Other”Œ	Olive Oil”ŒOlives (including preserved)”ŒOnions”ŒOranges, Mandarines”ŒPalm Oil”ŒPalmkernel Oil”ŒPeas”ŒPelagic Fish”ŒPepper”Œ Pigmeat”Œ Pimento”ŒPineapples and products”ŒPotatoes and products”ŒPoultry Meat”ŒPulses, Other and products”ŒRape and Mustard Oil”ŒRape and Mustardseed”ŒRice and products”ŒRicebran Oil”ŒRoots, Other”ŒRye and products”Œ
+Sesame seed”ŒSesameseed Oil”ŒSorghum and products”ŒSoyabean Oil”Œ	Soyabeans”Œ
+Spices, Other”ŒSugar (Raw Equivalent)”Œ
+Sugar cane”ŒSugar non-centrifugal”ŒSunflower seed”ŒSunflowerseed Oil”ŒSweet potatoes”ŒSweeteners, Other”ŒTea (including mate)”ŒTomatoes and products”ŒVegetables, other”ŒWheat and products”ŒWine”et”b.•       Œ_sklearn_version”Œ1.6.1”ub.
