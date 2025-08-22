@@ -1,0 +1,21 @@
+# cropmodel.py
+import pandas as pd
+from sklearn.tree import DecisionTreeClassifier
+import pickle
+
+df = pd.read_csv('FAOSTAT_data_en_4-2-2025.csv')
+
+# Clean data using actual columns
+df_ml = df[['area', 'item', 'year', 'value']].dropna()
+df_ml['area'] = df_ml['area'].astype('category').cat.codes
+df_ml['item'] = df_ml['item'].astype('category').cat.codes
+df_ml['year'] = df_ml['year'].astype(int)
+
+X = df_ml[['area', 'year', 'value']]
+y = df_ml['item']
+
+model = DecisionTreeClassifier()
+model.fit(X, y)
+
+# Save the model
+pickle.dump(model, open('crop_model.pkl', 'wb'))
