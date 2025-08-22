@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Crop Predictor</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #E6E0F8; /* very light lilac */
+      display: flex;
+      height: 100vh;
+      align-items: center;
+      justify-content: center;
+    }
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      width: 400px;
+    }
+    h2 {
+      text-align: center;
+      color: black; /* heading black */
+      margin-bottom: 20px;
+    }
+    input {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      color: black; /* input text black */
+      font-size: 16px;
+      box-sizing: border-box;
+    }
+    button {
+      width: auto;
+      padding: 10px 30px;
+      background-color: #6B3074; /* baigan purple */
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      border: none;
+      border-radius: 8px;
+      display: block;
+      margin: 10px auto 0 auto;
+      transition: background-color 0.3s ease;
+      font-size: 16px;
+    }
+    button:hover {
+      background-color: #582759; /* darker baigan purple on hover */
+    }
+    .result {
+      font-size: 18px;
+      color: #388E3C; /* slightly darker green */
+      margin-top: 15px;
+      text-align: center;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h2>Crop Recommendation</h2>
+    <input type="number" id="avg" placeholder="Average Production">
+    <input type="number" id="std" placeholder="Standard Deviation">
+    <input type="number" id="cagr" placeholder="CAGR">
+    <button onclick="predictCrop()">Predict</button>
+    <div class="result" id="result"></div>
+  </div>
+
+  <script>
+    function predictCrop() {
+      const avg = parseFloat(document.getElementById("avg").value);
+      const std = parseFloat(document.getElementById("std").value);
+      const cagr = parseFloat(document.getElementById("cagr").value);
+
+      fetch("http://127.0.0.1:5000/predict", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          avg_production: avg,
+          std_production: std,
+          CAGR: cagr
+        })
+      })
+      .then(response => response.json())
+      .then(data => {
+        if (data.predicted_crop) {
+          document.getElementById("result").innerText = "Predicted Crop: " + data.predicted_crop;
+        } else {
+          document.getElementById("result").innerText = "Error: " + data.error;
+        }
+      });
+    }
+  </script>
+</body>
+</html>
+
